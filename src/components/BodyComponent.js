@@ -5,12 +5,9 @@ import End from './EndComponent';
 import Setup from './SetupComponent';
 import Turn from './TurnComponent';
 import Side from './SideComponent';
+import TableHand from './TableComponent';
 
 class Body extends Component {
-    constructor(props) {
-        super(props);
-
-    }
 
     render() {
         return (
@@ -24,6 +21,7 @@ class Body extends Component {
                         <Route exact path='/turn' render={() => <Turn /> } />
                         <Route exact path='/setup' render={() => <Setup /> } />
                         <Route exact path='/end' render={() => <End /> } />
+                        <Route exact path='/score' render={() => <TableHand /> } />
                         <Redirect to='/overview' />
                     </Switch>
                 </div>

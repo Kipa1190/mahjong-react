@@ -2,10 +2,6 @@ import React, { Component }  from 'react';
 import setup from "../assets/img/set-up2.jpg"
 
 class Overview extends Component {
-    constructor(props) {
-        super(props);
-
-    }
 
     render() {
         return (
@@ -14,7 +10,7 @@ class Overview extends Component {
                 <div className="row">
                     <div className="col">
                         <h3 className="col">Overview</h3>
-                        <img src={setup} className="img-fluid"/>
+                        <img src={setup} className="img-fluid" alt="" />
                         <br />
                         <br />
                         <p className="col">

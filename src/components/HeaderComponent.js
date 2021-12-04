@@ -46,7 +46,7 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link mx-3" to="/end">
+                                    <NavLink className="nav-link mx-3" to="/score">
                                         <i className="fa fa-trophy fa-lg" /> Scoring Table
                                     </NavLink>
                                 </NavItem>

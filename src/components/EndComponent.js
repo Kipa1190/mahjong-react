@@ -3,10 +3,6 @@ import sets from '../assets/img/sets.jpg';
 import { Table } from 'reactstrap';
 
 class End extends Component {
-    constructor(props) {
-        super(props);
-
-    }
 
     render (){
         return (
@@ -19,7 +15,7 @@ class End extends Component {
                             The game ends when either a player is able to complete a winning hand, or there are no more tiles on any walls to draw from, which results in a draw. If the East wind player wins the game, they will remain the East wind for the next game as well and roll the die again. If any other player wins, or the game ends in a draw, the next player to the right becomes East wind for the next round and all the wind seats change accordingly. Note that if the East player does not win, the next East wind seat will always be the player to the right, regardless if that player won or not. Since the East wind player stays as East for winning, round winds may last longer than 4 games since it only changes once the East wind goes all the way around the table.
                         </p>
                         <br/>
-                        <img src={sets}/>
+                        <img src={sets} className="img-fluid" alt="" />
                         <br/>
                         <h5 className="col">Winning Hands</h5>
                         <div className="col">   
