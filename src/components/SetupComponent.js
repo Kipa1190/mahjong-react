@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
-
+import wall from '../assets/img/wall.jpg';
+import suits from '../assets/img/suit-tiles.jpg';
 class Setup extends Component {
     constructor(props) {
         super(props);
@@ -17,7 +18,7 @@ class Setup extends Component {
                                 The game begins with all the tiles face down on the table to be shuffled. This is done by simply having all players push the tiles around to mix them up. After shuffling, each player builds a wall containing 36 tiles by lining up 18 tiles and then stacking another layer on top of that. These walls are then brought together to create a square and will be drawn from later on.
                             </p>
                             <div className="col">
-                            <img src="assets/img/wall.jpg" className="img-fluid" alt="wall" />
+                            <img src={wall} className="img-fluid" alt="wall" />
                             </div>
                             <br />
                             <h5 className="col">Rolling Dice and Winds</h5>
@@ -29,6 +30,8 @@ class Setup extends Component {
                                 After the three die have been rolled, the total of the rolls are added up. The walls are then counted <b>counter-clockwise</b> starting with the dice roller. For example, if the rolls added up to 3, the count would land on the player or wall directly opposite the roller, since the roller is 1, the player to the right is 2, and the opposite player would then be 3. If the rolls add up to 5, the count would land back on the roller in the same fashion and so on. On the wall that the count lands on, tiles on the top row are then counted going <b>clockwise</b> using the same total from the dice roll. The East wind player will then draw the first block of 4 tiles after counting, with the counted tiles being skipped. Going counter-clockwise, each player will likewise draw the next block of 4 tiles, going around the table 3 times until each player has 12 tiles. Then in the same order, each player will draw 1 additional tile to create a starting hand of 13. The East wind player then draws another additional tile since they will be the first to act. At the beginning of each turn, the player will draw from the same end of the wall as the initial draw. 
                             </p>
                             <h5 className="col">Flowers and Seasons</h5>
+
+                            <img src={suits} className="img-fluid" alt="suits"/>
                             <p className="col">
                                 If any player has any of the 8 special flower or season tiles in their starting hand, they must reveal it immediately and put it aside. Then, the player must draw a new tile to replace it from the back end of the wall (the side that was skipped when counting for the initial draw). The East player draws their replacement tile first, then the other players going counter-clockwise order. If a player has more than one flower or season, they are to draw that many replacement tiles all at once. The same is done if a player draws a flower or season tile from the wall when they take their turn.
                             </p>

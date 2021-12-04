@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import setup from "/assets/img/set-up2.jpg"
+import setup from "../assets/img/set-up2.jpg"
 
 class Overview extends Component {
     constructor(props) {
@@ -14,7 +14,7 @@ class Overview extends Component {
                 <div className="row">
                     <div className="col">
                         <h3 className="col">Overview</h3>
-                        <img src={setup}/>
+                        <img src={setup} className="img-fluid"/>
                         <br />
                         <br />
                         <p className="col">
