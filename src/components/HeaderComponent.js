@@ -2,7 +2,6 @@ import React, { Component }  from 'react';
 import { Navbar, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
-
 class Header extends Component {
     
     constructor(props) {
@@ -26,12 +25,9 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <Jumbotron fluid>
-                    
                     <div className="container">
                         <div className="row">
-                        
                             <div className="col">
-                            
                                 <h1>Mahjong</h1>
                                 <h2>for beginners</h2>
                             </div>
@@ -45,12 +41,12 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                                 <NavItem>
-                                    <NavLink className="nav-link mx-3" to="/home">
+                                    <NavLink className="nav-link mx-3" to="/overview">
                                         <i className="fa fa-thumbs-up fa-lg" /> How-To-Play
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link mx-3" to="/scoring">
+                                    <NavLink className="nav-link mx-3" to="/score">
                                         <i className="fa fa-trophy fa-lg" /> Scoring Table
                                     </NavLink>
                                 </NavItem>
@@ -58,7 +54,6 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar> 
-
             </React.Fragment>
         );
     }
