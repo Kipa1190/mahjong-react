@@ -1,20 +1,18 @@
 import React, { Component }  from 'react';
 
-
-class Body extends Component {
+class End extends Component {
     constructor(props) {
         super(props);
 
     }
 
-    render() {
+    render (){
         return (
             <React.Fragment>
-                
+
             </React.Fragment>
-            );
+        );
     }
 
 }
-
-export default Body;
+export default End;

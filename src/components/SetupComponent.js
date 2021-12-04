@@ -1,7 +1,6 @@
 import React, { Component }  from 'react';
 
-
-class Body extends Component {
+class Setup extends Component {
     constructor(props) {
         super(props);
 
@@ -16,5 +15,4 @@ class Body extends Component {
     }
 
 }
-
-export default Body;
+export default Setup;

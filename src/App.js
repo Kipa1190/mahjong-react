@@ -3,6 +3,7 @@ import Header from './components/HeaderComponent';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Body from './components/BodyComponent';
+import Overview from './components/OverviewComponent';
 
 class App extends Component {
     render() {
@@ -11,6 +12,7 @@ class App extends Component {
                 <div className="App">
                     <Header />
                     <Body/>
+                    <Overview/>
                 </div>
             </BrowserRouter>
         );
