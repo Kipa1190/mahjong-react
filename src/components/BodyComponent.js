@@ -8,6 +8,9 @@ import Side from './SideComponent';
 import TableHand from './TableComponent';
 
 class Body extends Component {
+    constructor(props) {
+        super(props);
+    }
 
     render() {
         return (
